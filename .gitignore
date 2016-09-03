@@ -2,16 +2,7 @@
 
 .idea/
 JavaGoIt_sergei.iml
-out/
-src/module2/draft/
-src/module1/
-src/module2/practice/
-src/module2/testpackage/
-src/module3/
-Would skip repository src/module2/homework
-src/module2/ArraysExample.java
-src/module2/LoopsExample.java
-src/module2/OperatorsExample.java
-src/module2/VariablesExample.java
+
+
 
 
