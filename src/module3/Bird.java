@@ -10,6 +10,7 @@ public class Bird extends Animal {
         }
         void whoareyou(){
             System.out.println("I am Bird");
+
         }
     }
 
