@@ -1,5 +1,7 @@
-package module3;
+package module3.Homework31;
 
+
+import module3.Homework31.Animal;
 
 public class Bird extends Animal {
         void fly() {

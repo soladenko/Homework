@@ -1,5 +1,7 @@
-package module3;
+package module3.Homework31;
 
+
+import module3.Homework31.Bird;
 
 public class Solution {
         public static void main(String[] args) {
