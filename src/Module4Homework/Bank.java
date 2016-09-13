@@ -87,6 +87,9 @@ public abstract class Bank {
     public void setTotalCapital(long totalCapital) {
         this.totalCapital = totalCapital;
     }
+
+
+    public abstract Bank getBank();
 }
 
 
