@@ -48,39 +48,32 @@ public class User {
         return bank;
     }
 
-    public User setId(long id) {
+    public void setId(long id) {
         this.id = id;
-        return this;
     }
 
-    public User setName(String name) {
+    public void setName(String name) {
         this.name = name;
-        return this;
     }
 
-    public User setBalance(double balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
-        return this;
     }
 
-    public User setMonthsOfEmployment(int monthsOfEmployment) {
+    public void setMonthsOfEmployment(int monthsOfEmployment) {
         this.monthsOfEmployment = monthsOfEmployment;
-        return this;
     }
 
-    public User setCompanyName(String companyName) {
+    public void setCompanyName(String companyName) {
         this.companyName = companyName;
-        return this;
     }
 
-    public User setSalary(int salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
-        return this;
     }
 
-    public User setBank(Bank bank) {
+    public void setBank(Bank bank) {
         this.bank = bank;
-        return this;
     }
 
     @Override
@@ -95,4 +88,5 @@ public class User {
                 ", bank=" + bank +
                 '}';
     }
+
 }

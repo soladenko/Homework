@@ -2,13 +2,13 @@ package Module4Homework;
 
 
 public abstract class Bank {
-    long id;
-    String bankCountry;
-    Currency currency;
-    int numberOfEmployees;
-    double avrSalaryOfEmployee;
-    long rating;
-    long totalCapital;
+    private long id;
+    private String bankCountry;
+    private Currency currency;
+    private int numberOfEmployees;
+    private double avrSalaryOfEmployee;
+    private long rating;
+    private long totalCapital;
 
     public Bank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         this.id = id;
@@ -64,33 +64,29 @@ public abstract class Bank {
         return this;
     }
 
-    public Bank setBankCountry(String bankCountry) {
+    public void setBankCountry(String bankCountry) {
         this.bankCountry = bankCountry;
-        return this;
     }
 
-    public Bank setCurrency(Currency currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
-        return this;
     }
 
     public void setNumberOfEmployees(int numberOfEmployees) {
         this.numberOfEmployees = numberOfEmployees;
     }
 
-    public Bank setAvrSalaryOfEmployee(double avrSalaryOfEmployee) {
+    public void setAvrSalaryOfEmployee(double avrSalaryOfEmployee) {
         this.avrSalaryOfEmployee = avrSalaryOfEmployee;
-        return this;
     }
 
-    public Bank setRating(long rating) {
+    public void setRating(long rating) {
         this.rating = rating;
-        return this;
     }
 
-    public Bank setTotalCapital(long totalCapital) {
+    public void setTotalCapital(long totalCapital) {
         this.totalCapital = totalCapital;
-        return this;
     }
-
 }
+
+
