@@ -12,23 +12,24 @@ public class User {
 
     }
 
-    public User(String sergei, int i, int i1, String utel, String usd) {
+    public User(String sergei, int i, int i1, String utel, int i2, String usd) {
     }
 
     //метод add salary
-    public void paySalary() {
-        balance+=salary;
+    public int paySalary() {
+       return balance+=salary;
     }
     //метод снятие денег
     public int withdraw (int summ){
         int withdraw ;
-        if (summ < 1000) withdraw = summ  * 5 / 100;
-        else  withdraw = summ  * 10 / 100;
+        if (summ < 1000) withdraw = summ * 5 / 100;
+        else  withdraw =summ * 10 / 100;
         return balance-withdraw-summ;
     }
-    public void CompanyLenght(){
-        System.out.println(companyName.length());
+    public int CompanyNameLenght(){
+        return companyName.length();
     }
+
     public int monthIncreaser(int addMonths){
         monthsOfEmployment+=addMonths;
         return monthsOfEmployment;
@@ -82,10 +83,11 @@ public class User {
     }
 
     public static void main(String[] args) {
-        User user=new User("Sergei",5000,3,"Utel","USD");
-        user.paySalary();
+
+        User user=new User("Sergei",5000,3,"Utel",500,"USD");
+       // System.out.println(user.paySalary());
         user.getCompanyName();
-        System.out.println(user.withdraw(2000));
+        System.out.println(user.withdraw(100));
         user.monthIncreaser(2);
         System.out.println(user.monthsOfEmployment);
     }
