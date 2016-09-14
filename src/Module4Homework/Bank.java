@@ -89,7 +89,7 @@ public abstract class Bank {
     }
 
 
-    public abstract Bank getBank();
+
 }
 
 
