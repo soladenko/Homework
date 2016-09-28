@@ -6,7 +6,7 @@ public class TripAdvisorAPI implements API {
     private Room[] rooms ;
 
 
-    private TripAdvisorAPI() {
+    public TripAdvisorAPI() {
         Room room1 = new Room(100,2,"Kiyv");
         rooms[0]=room1;
         Room room2=new Room(200,2,"Lviv");
