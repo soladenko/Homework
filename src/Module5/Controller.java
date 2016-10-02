@@ -1,13 +1,14 @@
 package Module5;
 
 public class Controller {
-    API apis[]=new API[3];
+    API apis[] = new API[3];
 
-    public Controller(){
-        apis[0]= new BookingComAPI();
-        apis[1]= new GoogleAPI();
-        apis[2]=new TripAdvisorAPI();
+    public Controller() {
+        apis[0] = new BookingComAPI();
+        apis[1] = new GoogleAPI();
+        apis[2] = new TripAdvisorAPI();
     }
+
     Room[] requestRooms(int price, int persons, String cityName, String hotelName) {
         Room[] rooms0 = apis[0].findRooms(price, persons, cityName, hotelName);
         Room[] rooms1 = apis[1].findRooms(price, persons, cityName, hotelName);
@@ -34,14 +35,19 @@ public class Controller {
                     count++;
 
                 }
+
+
                 return res;
+            }
+        }
 
 
 
 
 
 
-               Room[] roomsFromApi1 = api1.getRooms();
+
+      /*         Room[] roomsFromApi1 = api1.getRooms();
                 Room[] roomsFromApi2= api2.getRooms();
 
 
@@ -57,4 +63,4 @@ public class Controller {
                         }
                             count++;
                         }
-                    }
+                    }*
