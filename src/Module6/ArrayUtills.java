@@ -117,7 +117,8 @@ public class ArrayUtills {
     public static void main(String[] args) {
         int[]array={20,30,40,50,60};
 
-        System.out.println(sum(array));
+        //System.out.println(sum(array));
+        System.out.println(ArrayUtils.sum(array));
     }
 
     }
