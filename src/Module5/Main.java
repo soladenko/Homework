@@ -12,6 +12,7 @@ public class Main {
        /* controller.check(new BookingComAPI(), new GoogleAPI());
         controller.check(new BookingComAPI(), new GoogleAPI());
         controller.check(new BookingComAPI(), new GoogleAPI());*/
+
     }
 }
 

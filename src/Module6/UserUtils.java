@@ -72,6 +72,6 @@ final User[]paySalaryToUsers(User[]users) {
         return res;
 
     }
-}
 
+}
 
