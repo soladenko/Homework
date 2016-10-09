@@ -20,6 +20,10 @@ public class Order {
 
     }
 
+    public Order(int ID, int price, Currency currency, String milk, String shopIdentificator, User user) {
+    }
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -39,7 +43,7 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "id=" + ID +
+                "ID=" + ID +
                 ", price=" + price +
                 ", currency=" + currency +
                 ", itemName='" + itemName + '\'' +
@@ -50,15 +54,22 @@ public class Order {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        int result = (int) (ID ^ (ID >>> 32));
+        result = 31 * result + price;
+        result = 31 * result + (currency !=null? currency.hashCode():0);
+        result = 31 * result + (itemName !=null? itemName.hashCode():0);
+        result = 31 * result + (shopIdentificator !=null? shopIdentificator.hashCode():0);
+        result = 31 * result + (user != null? user.hashCode():0);
+        return result;
+
     }
 
     public long getId() {
         return ID;
     }
 
-    public void setId(long id) {
-        this.ID = id;
+    public void setId(long ID) {
+        this.ID = ID;
     }
 
     public int getPrice() {
