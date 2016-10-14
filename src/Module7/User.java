@@ -8,7 +8,7 @@ public class User {
     private String city;
     private int balance;
 
-    public User(long id, String firstName, String lastName, String city, int balance) {
+    public User(long ID, String firstName, String lastName, String city, int balance) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -34,7 +34,6 @@ public class User {
 
     @Override
     public int hashCode() {
-
             int result = (int) (ID ^ (ID >>> 32));
             result = 31 * result + firstName.hashCode();
             result = 31 * result + lastName.hashCode();
@@ -47,7 +46,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + ID +
+                "ID=" + ID +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", city='" + city + '\'' +
@@ -59,7 +58,7 @@ public class User {
         return ID;
     }
 
-    public void setId(long id) {
+    public void setId(long ID) {
         this.ID = ID;
     }
 

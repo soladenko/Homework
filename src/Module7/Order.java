@@ -1,15 +1,16 @@
 package Module7;
 
-import java.util.Currency;
+
+import Module4Homework.Currency;
 
 public class Order {
     private long ID;
     private int price;
-    private Currency currency;
+
     private String itemName;
     private String shopIdentificator;
     private User user;
-
+    private Currency currency;
     public Order(long ID, int price, Currency currency, String itemName, String shopIdentificator, User user) {
         this.ID = ID;
         this.price = price;
